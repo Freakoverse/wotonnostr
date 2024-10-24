@@ -108,6 +108,14 @@ p {
   justify-content: start;
 }
 
+@media (max-width: 576px) {
+  .boxInsideCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
+
 .boxInsideCardsBox {
   transition: 0.4s;
   display: flex;
@@ -121,6 +129,14 @@ p {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .boxInsideCardsBox {
+    min-width: 100%;
+    font-size: 12px;
+    line-height: 1;
+  }
 }
 
 .boxInsideCardsBoxTop {
@@ -150,6 +166,7 @@ p {
   grid-gap: 10px;
   padding: 10px;
   background: rgba(255,255,255,0.05);
+  width: 100%;
 }
 
 .boxInsideCardsBox.boxInsideCardsBoxActive {
