@@ -118,6 +118,8 @@ p {
   min-width: 256px;
   max-width: calc(100% / 6);
   flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
   opacity: 0.5;
 }
 
@@ -147,14 +149,11 @@ p {
   flex-direction: column;
   grid-gap: 10px;
   padding: 10px;
-  border-radius: 10px;
   background: rgba(255,255,255,0.05);
 }
 
 .boxInsideCardsBox.boxInsideCardsBoxActive {
   outline: solid 2px #d942ff;
-  border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
   transform: scale(1.02);
   opacity: 1;
