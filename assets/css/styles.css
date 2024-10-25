@@ -101,11 +101,22 @@ p {
 
 .boxInsideCards {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 25px;
   flex-wrap: wrap;
   justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .boxInsideCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 @media (max-width: 576px) {
@@ -123,12 +134,13 @@ p {
   grid-gap: 10px;
   width: 100%;
   flex-grow: 1;
-  min-width: 256px;
-  max-width: calc(100% / 6);
+  /*min-width: 256px;*/
+  /*max-width: calc(100% / 6);*/
   flex-wrap: wrap;
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.5;
+  width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -147,6 +159,7 @@ p {
   background: rgba(255,255,255,0.1);
   border-radius: 5px;
   border: solid 1px rgba(255,255,255,0.1);
+  height: 100%;
 }
 
 .boxInsideCardsBoxMid {
@@ -167,6 +180,7 @@ p {
   padding: 10px;
   background: rgba(255,255,255,0.05);
   width: 100%;
+  height: 100%;
 }
 
 .boxInsideCardsBox.boxInsideCardsBoxActive {
@@ -196,5 +210,36 @@ p {
 
 .boxInsideNumbers > :nth-child(-n + 10) {
   margin-left: -7px;
+}
+
+.boxInsideRangeStep {
+  width: 100%;
+  max-width: 500px;
+}
+
+.boxInsideNumbersSteps {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 546px;
+  margin-top: -15px;
+}
+
+.boxInsideNumbersSteps > * {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: -10px;
+}
+
+.boxInsideCardsAlt {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
