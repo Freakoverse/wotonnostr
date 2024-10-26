@@ -28,6 +28,11 @@
 .MidMain {
   width: 100%;
   flex-grow: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .secMain {
@@ -35,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 50px 0;
   grid-gap: 50px;
   position: relative;
 }
