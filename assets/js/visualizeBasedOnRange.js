@@ -6,7 +6,7 @@ function updateBoxes(value) {
     boxes.forEach(box => box.classList.remove('boxInsideCardsBoxActive'));
 
     // Calculate the starting index for highlighting
-    let startIndex = 10 + value; // 10 is the index of the 11th box
+    let startIndex = 5 + value; // 10 is the index of the 11th box
 
     // Ensure the start index is within bounds
     startIndex = Math.max(0, Math.min(startIndex, boxes.length - 1)); // Clamp between 0 and boxes.length - 1
